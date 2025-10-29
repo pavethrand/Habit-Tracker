@@ -1,0 +1,299 @@
+Habit Tracker App – Requirements Document
+
+Version v1.1:
+
+1. Project Overview
+
+A mobile application that allows users to create, track, and manage their daily habits. The goal is to help users build good habits and stay consistent over time.
+
+2. Core Features
+2.1. User Onboarding
+
+ Splash Screen
+
+ Welcome screen with brief intro
+
+ Option to sign in or continue without account (optional for MVP)
+
+2.2. Habit Management
+
+ Create a new habit:
+
+Habit name
+
+Frequency (Daily / Weekly / Custom days)
+
+Start date
+
+ Edit habit
+
+ Delete habit
+
+2.3. Habit Tracking
+
+ Mark habit as done for the day
+
+ View today's habit list
+
+ Calendar view or weekly progress bar for each habit
+
+2.4. Progress & Analytics
+
+ Simple stats per habit:
+
+Completion streak
+
+Success rate (percentage)
+
+Days completed
+
+ Visual representation (bar/line chart or progress ring)
+
+2.5. Notifications (Optional for MVP)
+
+ Daily reminders to complete habits
+
+ Custom notification time per habit
+
+2.6. Settings
+
+ Toggle dark/light mode
+
+ Manage notifications
+
+ Clear all data (for testing or reset)
+
+3. Tech Stack
+
+Framework: React Native
+
+Tooling: Expo
+
+State Management: React Context API or Zustand (simple global state)
+
+Navigation: React Navigation
+
+Local Storage: AsyncStorage or MMKV for performance
+
+Notifications: Expo Notifications API
+
+Charts (optional): Victory Native or react-native-chart-kit
+
+4. Non-Functional Requirements
+
+Simple and clean UI/UX
+
+Responsive design for various device sizes
+
+Offline-first support (data stored locally)
+
+Quick load time (<2s startup)
+
+Accessibility (basic support like large fonts)
+
+5. Future Enhancements (Not MVP)
+
+User accounts & cloud sync
+
+Social sharing or community features
+
+Habit templates
+
+Widgets or home screen progress
+
+Version v1.2:
+Habit Tracker App – Updated Requirements Document (v2)
+1. Project Overview
+
+A mobile application built using React Native (Expo) to help users manage their tasks, habits, and personal growth.
+The app allows users to track positive habits, break bad ones, and organize daily tasks — all in one minimal and intuitive interface.
+
+The app consists of five main pages:
+Home, Habits, Leave, Admin/Settings, and Creators.
+
+2. Core Features
+2.1. Home Page – “Task Dashboard”
+
+The Home Page serves as the main productivity hub where users manage their tasks.
+
+Features:
+
+Add New Task
+
+Fields:
+
+Task Name
+
+Description
+
+Category (select or add new)
+
+Deadline / Due Date
+
+Priority (Important 🔴 / Normal ⚪ / Low 🟢)
+
+Task List View
+
+Displays all created tasks with color-coded priorities:
+
+🔴 Important – Red
+
+⚪ Normal – White
+
+🟢 Low – Green
+
+Show progress indicators (e.g., completed / pending)
+
+Edit or delete existing tasks
+
+Quick Actions
+
+Mark task as completed
+
+Filter by category or priority
+
+Optional:
+
+Sorting by due date, category, or priority
+
+Simple analytics (e.g., % tasks completed this week)
+
+2.2. Habits Page – “Build Good Habits”
+
+This is the core of the app, focusing on habit creation, tracking, and motivation.
+
+Features:
+
+Create Habit
+
+Fields:
+
+Habit Name
+
+Description (optional)
+
+Frequency: Daily / Weekly / Monthly / Custom days
+
+Start Date
+
+Category
+
+Priority (Important 🔴 / Normal ⚪ / Low 🟢)
+
+Habit Tracking
+
+Mark habit as “done” each day
+
+Show daily or weekly habit list
+
+Display streak counter (🔥)
+
+Success rate (% completion)
+
+Calendar or progress bar view
+
+Analytics
+
+Total completions
+
+Longest streak
+
+Visual chart (bar, line, or progress ring)
+
+Motivation
+
+Optional daily reminder notification for each habit
+
+Encouraging messages after streak milestones
+
+2.3. Leave Page – “Break Bad Habits”
+
+This page helps users quit or forget unwanted habits by tracking consistency in not doing them.
+
+Features:
+
+Add a “Leave Habit”
+
+Fields:
+
+Habit Name (what to quit)
+
+Description (why to quit)
+
+Category (optional)
+
+Priority/Severity (Critical 🔴 / Normal ⚪ / Minor 🟢)
+
+Daily Check-In
+
+User clicks “Didn’t do it today” (✅)
+
+Each day adds +1 to the streak counter
+
+If user misses a day → streak resets to 1
+
+Auto-Removal Logic
+
+Once the streak reaches 7 days, habit is auto-deleted
+
+Optional success message (“You’re free from this habit! 🎉”)
+
+Progress Overview
+
+Show current streak count
+
+Calendar or streak tracker visualization
+
+2.4. Admin / Settings Page – “Manage & Export”
+
+The admin/settings page allows users to control app behavior, manage data, and export progress.
+
+Features:
+
+Category Management
+
+Add / Edit / Delete categories
+
+Pre-filled categories available (e.g., Work, Health, Study, Fitness)
+
+Export Data
+
+Export as CSV / JSON
+
+Filter by:
+
+Monthly
+
+Custom date range
+
+All data
+
+General Settings
+
+Toggle dark/light mode
+
+Manage notifications
+
+Clear all data (reset)
+
+App version info
+
+Optional Admin Controls
+
+Import data
+
+Backup to local file or cloud (future enhancement)
+
+2.5. Creators / Publishers Page – “About & Coming Soon”
+
+A fun, branded page that introduces the app creators and future plans.
+
+Features:
+
+Placeholder section with “🚧 Developed Soon” message
+
+Display emoji image / mascot (e.g., 🤖🌱)
+
+Basic credits (Developed by [Team / Name])
+
+Future roadmap or upcoming features (optional)

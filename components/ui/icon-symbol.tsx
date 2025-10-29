@@ -1,7 +1,7 @@
 // Fallback for using MaterialIcons on Android and web.
 
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import { SymbolWeight, SymbolViewProps } from 'expo-symbols';
+import { SymbolViewProps, SymbolWeight } from 'expo-symbols';
 import { ComponentProps } from 'react';
 import { OpaqueColorValue, type StyleProp, type TextStyle } from 'react-native';
 
@@ -18,6 +18,36 @@ const MAPPING = {
   'paperplane.fill': 'send',
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
+  'chart.bar.fill': 'bar-chart',
+  'plus': 'add',
+  'checkmark.circle.fill': 'check-circle',
+  'xmark.circle.fill': 'cancel',
+  'gearshape.fill': 'settings',
+  'person.fill': 'person',
+  'list.bullet': 'list',
+  'trash': 'delete',
+  'flame.fill': 'local-fire-department',
+  'exclamationmark.triangle.fill': 'warning',
+  'circle.fill': 'radio-button-unchecked',
+  'checkmark.circle.fill': 'check-circle',
+  'checkmark': 'check',
+  'star.fill': 'star',
+  'hammer.fill': 'build',
+  'robot.fill': 'android',
+  'leaf.fill': 'eco',
+  'cloud.fill': 'cloud',
+  'person.2.fill': 'group',
+  'doc.text.fill': 'description',
+  'widget': 'widgets',
+  'square.and.arrow.up': 'share',
+  'folder.fill': 'folder',
+  'drop.fill': 'water-drop',
+  'figure.run': 'directions-run',
+  'book.fill': 'menu-book',
+  'brain.head.profile': 'psychology',
+  'laptopcomputer': 'laptop',
+  'heart.fill': 'favorite',
+  'briefcase.fill': 'work',
 } as IconMapping;
 
 /**
